@@ -1,0 +1,2 @@
+avg loss = 4.5s
+avg win = 16s
