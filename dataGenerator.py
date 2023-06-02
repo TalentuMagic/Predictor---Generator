@@ -139,8 +139,8 @@ def main():
     print("Working on...", end="")
     with open("dataSet.csv", 'w', newline='') as file:
         wr = csv.writer(file)
-        header = ["Line 1", "Good_1", "Line 2", "Good_2", "Line 3", "Good_3", "Line 4", "Good_4",
-                  "Line 5", "Good_5", "Line 6", "Good_6", "Line 7", "Good_7", "Line 8", "Good_8", "Winning Chance", "Line1As", "Line2As", "Line3As", "Line4As", "Line5As", "Line6As", "Line7As", "Line8As"]
+        header = ["Line1", "Good_1", "Line2", "Good_2", "Line3", "Good_3", "Line 4", "Good_4",
+                  "Line5", "Good_5", "Line6", "Good_6", "Line7", "Good_7", "Line8", "Good_8", "WinningChance", "Line1ID", "Line2ID", "Line3ID", "Line4ID", "Line5ID", "Line6ID", "Line7ID", "Line8ID"]
         wr.writerow(header)
     for _ in tqdm(range(1)):
         with concurrent.futures.ProcessPoolExecutor() as executor:
