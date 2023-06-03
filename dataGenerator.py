@@ -145,7 +145,7 @@ def main():
     for _ in tqdm(range(1)):
         with concurrent.futures.ProcessPoolExecutor() as executor:
             future = [executor.submit(getRandomInstance)
-                      for _ in range(48_600)]  # 486_000
+                      for _ in range(48_600)]  # 48_600
         with open("dataSet.csv", 'a', newline='') as file:
             for output in concurrent.futures.as_completed(future):
                 wr = csv.writer(file)
