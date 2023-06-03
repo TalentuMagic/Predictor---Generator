@@ -19,8 +19,8 @@ line8 = list()
 def getRandomInstance():
     global line1, line2, line3, line4, line5, line6, line7, line8
     lines = list()
-    bomb = "0"
-    crystal = "1"
+    bomb = "*"
+    crystal = "$"
     currentLine = 0
     noBombs = 4
 
@@ -111,11 +111,11 @@ def getRandomInstance():
 
     score = 0.0
     for i in range(1, len(lines), 2):
-        if lines[i] == "1":
+        if lines[i] == "$":
             score += 12.5
         else:
             break
-        if lines[i-2] == "1" and lines[i] == "0" and i > 1:
+        if lines[i-2] == "$" and lines[i] == "*" and i > 1:
             break
 
     lines.append(math.floor(score))
@@ -139,8 +139,8 @@ def main():
     print("Working on...", end="")
     with open("dataSet.csv", 'w', newline='') as file:
         wr = csv.writer(file)
-        header = ["Line1", "Good_1", "Line2", "Good_2", "Line3", "Good_3", "Line 4", "Good_4",
-                  "Line5", "Good_5", "Line6", "Good_6", "Line7", "Good_7", "Line8", "Good_8", "WinningChance", "Line1ID", "Line2ID", "Line3ID", "Line4ID", "Line5ID", "Line6ID", "Line7ID", "Line8ID"]
+        header = ["Line1", "Choice1", "Line2", "Choice2", "Line3", "Choice3", "Line 4", "Choice4",
+                  "Line5", "Choice5", "Line6", "Choice6", "Line7", "Choice7", "Line8", "Choice8", "WinningChance", "Line1ID", "Line2ID", "Line3ID", "Line4ID", "Line5ID", "Line6ID", "Line7ID", "Line8ID"]
         wr.writerow(header)
     for _ in tqdm(range(1)):
         with concurrent.futures.ProcessPoolExecutor() as executor:
