@@ -1,0 +1,4 @@
+Trebuie sa iau linia ca LABEL ci nu sub forma de CLASA.
+Si alegerea sub forma de CLASA, ci nu LABEL!!!!
+
+https://github.com/sdlee94/Minesweeper-AI-Reinforcement-Learning

@@ -33,7 +33,7 @@ def getRandomInstance():
         noBombs -= 1
     if currentLine == 1:
         lines.append("".join(random.sample(
-            ["1", "9"], k=1)))
+            ["1", "2", "3", "4", "5", "6", "7", "8", "9"], k=1)))
         currentLine += 1
 
     # line 2
@@ -45,7 +45,7 @@ def getRandomInstance():
         noBombs -= 1
     if currentLine == 3:
         lines.append("".join(random.sample(
-            ["1", "8"], k=1)))
+            ["1", "2", "3", "4", "5", "6", "7", "8"], k=1)))
         currentLine += 1
 
     # line 3
@@ -56,7 +56,7 @@ def getRandomInstance():
         currentLine += 1
     if currentLine == 5:
         lines.append("".join(random.sample(
-            ["1", "7"], k=1)))
+            ["1", "2", "3", "4", "5", "6", "7"], k=1)))
         currentLine += 1
     # line 4
     if currentLine == 6:
@@ -66,7 +66,7 @@ def getRandomInstance():
         currentLine += 1
     if currentLine == 7:
         lines.append("".join(random.sample(
-            ["1", "6"], k=1)))
+            ["1", "2", "3", "4", "5", "6"], k=1)))
         currentLine += 1
     # line 5
     if currentLine == 8:
@@ -77,7 +77,7 @@ def getRandomInstance():
         noBombs -= 1
     if currentLine == 9:
         lines.append("".join(random.sample(
-            ["1", "5"], k=1)))
+            ["1", "2", "3", "4", "5"], k=1)))
         currentLine += 1
 
     # line 6
@@ -88,7 +88,7 @@ def getRandomInstance():
         currentLine += 1
     if currentLine == 11:
         lines.append("".join(random.sample(
-            ["1", "4"], k=1)))
+            ["1", "2", "3", "4"], k=1)))
         currentLine += 1
     if currentLine == 12:
         lines.append("".join(random.sample(
@@ -97,7 +97,7 @@ def getRandomInstance():
         currentLine += 1
     if currentLine == 13:
         lines.append("".join(random.sample(
-            ["1", "3"], k=1)))
+            ["1", "2", "3"], k=1)))
         currentLine += 1
     if currentLine == 14:
         lines.append("".join(random.sample(
